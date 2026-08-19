@@ -1,0 +1,71 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+header_info,Info,Header,read this first,,,,,General
+info_text,Info,Text,"applies vanilla settings.json keys at runtime. existing HA progress in a save is NOT wiped; monthly gain and future checks change. some values only fully apply after loading a save. set progress mults to 0 to stall a faction's HA contribution.",,,,,General
+header_ha,Hostile Activity,Header,global HA,,,,,General
+ha_maxMonthlyProgress,Max Monthly Progress,Int,60,,"cap on monthly HA progress. vanilla 60. 0 stalls the meter from ticking up.",0,500,General
+ha_maxMonthlyProgressEasy,Max Monthly Progress (Easy),Int,30,,"same cap on easy difficulty. vanilla 30.",0,500,General
+maxHostileActivityFleetsPerSystem,Max HA Fleets Per System,Int,11,,"hard cap on hostile-activity fleets in one system. vanilla 11.",0,50,General
+HA_fleetPointsPerPoint,Fleet FP Per HA Point,Int,10,,"HA reduction from destroying HA fleets. higher = more reduction per fight. vanilla 10.",0,100,General
+blowbackFraction,Blowback Fraction,Double,1,,"fraction of one-time negative HA factors that blow back. vanilla 1.",0,5,General
+blowbackPerMonth,Blowback Per Month,Double,0.05,,"monthly blowback rate. vanilla 0.05.",0,1,General
+header_pather,Pathers,Header,luddic path HA,,,,,Pathers
+patherProgressMultNoCells,Progress Mult (No Cells),Double,0,,"HA progress multiplier when there are no pather cells. vanilla 0.",0,5,Pathers
+patherProgressMultSleeperCells,Progress Mult (Sleeper / Disrupted),Double,0.25,,"also applies to disrupted cells. set to 0 so killing bases / disrupting cells stops pather HA. vanilla 0.25.",0,5,Pathers
+patherProgressMultActiveCells,Progress Mult (Active Cells),Double,1,,"HA progress multiplier while cells are active. lower = more time to kill the base. vanilla 1.",0,5,Pathers
+patherProgressUnit,Progress Unit,Double,10,,"nonlinear pather HA: remove this unit from total then multiply remainder by Progress Mult and repeat. vanilla 10.",1,100,Pathers
+patherProgressMult,Progress Mult (Nonlinear),Double,0.75,,"diminishing returns multiplier for pather interest -> HA. vanilla 0.75. lower = slower ramp.",0,2,Pathers
+luddicPathMaxFleets,Max Pather Fleets,Int,4,,"max concurrent luddic path HA fleets. vanilla 4.",0,20,Pathers
+luddicPathSmallFleetProb,Small Fleet Probability,Double,0.85,,"chance a pather HA fleet is the small variant. vanilla 0.85.",0,1,Pathers
+luddicPathSleeperCellsBase,Sleeper Cells Base,Double,0.05,,"base sleeper-cell contribution. vanilla 0.05.",0,1,Pathers
+luddicPathSleeperCellsPerSize,Sleeper Cells Per Size,Double,0,,"extra sleeper cells per colony size. vanilla 0.",0,1,Pathers
+luddicPathActiveCellsBase,Active Cells Base,Double,0,,"base active-cell contribution. vanilla 0.",0,1,Pathers
+luddicPathActiveCellsPerSize,Active Cells Per Size,Double,0.05,,"extra active cells per colony size. vanilla 0.05.",0,1,Pathers
+luddicPathPerPointOfInterest,HA Per Interest Point,Double,0.01,,"pather HA from each point of pather interest. vanilla 0.01.",0,1,Pathers
+minInterestForPatherCells,Min Interest For Cells,Int,7,,"pather interest required before a cell can spawn. vanilla 7. raise to make cells rarer.",0,50,Pathers
+basePatherCellFraction,Base Cell Fraction,Double,0.07,,"fraction of markets that get active cells; next N get sleeper cells. vanilla 0.07.",0,1,Pathers
+patherCellDisruptionDuration,Cell Disruption Days,Int,365,,"how long cells stay disrupted after their supporting base is destroyed. vanilla 365.",0,3650,Pathers
+luddicPathTithePerPointOfInterestPerColonySize,Tithe Per Interest Per Size,Int,1000,,"mega-tithe cost scale. vanilla 1000.",0,100000,Pathers
+luddicPathTitheDurationDays,Tithe Duration Days,Int,730,,"how long a mega-tithe suppresses pather activity. vanilla 730.",0,3650,Pathers
+HA_patherBaseFlat,HA Reduction: Base Flat,Int,50,,"flat HA reduction for destroying a pather base. vanilla 50.",0,500,Pathers
+HA_patherBasePerActiveCell,HA Reduction: Per Active Cell,Int,20,,"extra HA reduction per active cell when destroying a pather base. vanilla 20.",0,200,Pathers
+HA_patherBaseMax,HA Reduction: Base Max,Int,150,,"cap on HA reduction from destroying a pather base. vanilla 150.",0,500,Pathers
+HA_megaTithe,HA Reduction: Mega Tithe,Int,30,,"HA reduction from paying the mega-tithe. vanilla 30.",0,500,Pathers
+minLPBases,Min LP Bases,Int,2,,"minimum hidden luddic path bases in the sector. vanilla 2.",0,20,Pathers
+maxLPBases,Max LP Bases,Int,3,,"maximum hidden luddic path bases in the sector. vanilla 3.",0,20,Pathers
+luddicPathCellsIncidentProbabilityPerMonth,Cell Incident Chance / Month,Double,0.1,,"monthly chance of a pather cell incident. vanilla 0.1.",0,1,Pathers
+header_pirate,Pirates,Header,pirate HA,,,,,Pirates
+pirateProtectionPaymentFraction,Kanta Protection Payment Fraction,Double,0.1,,"tribute fraction for kanta's protection. vanilla 0.1.",0,1,Pirates
+HA_kantaProtection,HA Reduction: Kanta Protection,Int,100,,"HA drop when you buy kanta's protection. vanilla 100.",0,500,Pirates
+minPirateBases,Min Pirate Bases,Int,2,,"minimum hidden pirate bases. vanilla 2.",0,20,Pirates
+maxPirateBases,Max Pirate Bases,Int,3,,"maximum hidden pirate bases. vanilla 3.",0,20,Pirates
+noPirateRaidDays,No Pirate Raid Days,Int,365,,"days after game start with no random pirate raids. vanilla 365.",0,3650,Pirates
+pirateProtectionMercSpawnChance,Protection Merc Spawn Chance,Double,0.1,,"chance kanta protection also spawns mercs. vanilla 0.1.",0,1,Pirates
+header_heg,Hegemony,Header,ai inspections,,,,,Hegemony
+hegemonyProgressUnit,Progress Unit,Double,10,,"nonlinear hegemony HA unit (same shape as pather). vanilla 10.",1,100,Hegemony
+hegemonyProgressMult,Progress Mult,Double,0.75,,"diminishing returns for hegemony HA from AI cores. vanilla 0.75.",0,2,Hegemony
+hegemonyPointsAdmin,Points: AI Admin,Int,10,,"HA points from an AI core administrator. vanilla 10. 0 = ignore.",0,100,Hegemony
+hegemonyPointsAlpha,Points: Alpha Core,Int,4,,"HA points per alpha core. vanilla 4.",0,50,Hegemony
+hegemonyPointsBeta,Points: Beta Core,Int,2,,"HA points per beta core. vanilla 2.",0,50,Hegemony
+hegemonyPointsGamma,Points: Gamma Core,Int,1,,"HA points per gamma core. vanilla 1.",0,50,Hegemony
+hegemonyPerAICorePoint,Investigator Strength Per Point,Double,0.01,,"scales hegemony investigator fleets. vanilla 0.01.",0,1,Hegemony
+hegemonyMaxFleets,Max Hegemony Fleets,Int,2,,"max concurrent hegemony HA fleets. vanilla 2.",0,20,Hegemony
+aiInspectionFrequencyMult,AI Inspection Frequency Mult,Double,1,,"multiplier on how often inspections spawn. vanilla 1. lower = rarer.",0,10,Hegemony
+header_other,Other Factions,Header,league / tt / diktat / church / remnant,,,,,Other
+perseanLeagueMaxFleets,Max League Fleets,Int,3,,"vanilla 3.",0,20,Other
+perseanLeagueFeeFraction,League Fee Fraction,Double,0.2,,"league protection / membership fee fraction. vanilla 0.2.",0,1,Other
+houseHannanFeeFraction,House Hannan Fee Fraction,Double,0.05,,"vanilla 0.05.",0,1,Other
+triTachyonMaxFleets,Max Tri-Tach Fleets,Int,2,,"vanilla 2.",0,20,Other
+triTachyonProgressPerUnitProdMult,Tri-Tach Progress Per Prod,Double,0.5,,"HA from competing production. vanilla 0.5.",0,5,Other
+diktatMaxFleets,Max Diktat Fleets,Int,2,,"vanilla 2.",0,20,Other
+diktatProgressPerUnitProdMult,Diktat Progress Per Prod,Double,1,,"vanilla 1.",0,5,Other
+diktatFuelFeeFraction,Diktat Fuel Fee Fraction,Double,0.5,,"vanilla 0.5.",0,2,Other
+diktatDefeatedExportBonus,Diktat Defeated Export Bonus,Double,0.25,,"vanilla 0.25.",0,2,Other
+luddicChurchMaxFleets,Max Church Fleets,Int,1,,"vanilla 1.",0,20,Other
+remnantNexusPointsDamaged,Remnant Nexus Points (Damaged),Int,10,,"HA from a damaged remnant nexus in-system. vanilla 10.",0,100,Other
+remnantNexusPointsNormal,Remnant Nexus Points (Normal),Int,20,,"HA from an intact remnant nexus in-system. vanilla 20.",0,100,Other
+header_raid,Raids / Bombard,Header,raid and bombard leftovers,,,,,Raids
+raidCooldownDays,Raid Cooldown Days,Int,1,,"vanilla 1.",0,365,Raids
+raidDefenderIncreasePerRaid,Defender Increase Per Raid,Int,3,,"vanilla 3.",0,50,Raids
+raidDefenderIncreaseMax,Defender Increase Max,Int,30,,"vanilla 30.",0,200,Raids
+bombardFuelFraction,Bombard Fuel Fraction,Double,1,,"vanilla 1.",0,5,Raids
+bombardDisruptDuration,Bombard Disrupt Days,Int,365,,"vanilla 365.",0,3650,Raids
