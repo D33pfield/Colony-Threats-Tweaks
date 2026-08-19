@@ -3,7 +3,7 @@
     "name": "Colony Threats Tweaks",
     "author": "Deepfield",
     "utility": true,
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "LunaLib settings for Hostile Activity / colony threat tuning. Pathers, pirates, hegemony, and related HA knobs without editing vanilla settings.json.",
     "gameVersion": "0.98a-RC8",
     "modPlugin": "data.scripts.colonythreats.ColonyThreatsPlugin",
