@@ -4,8 +4,8 @@ lunalib wrapper around vanilla hostile-activity / colony-threat settings.
 
 ## requires
 
-- lunalib (hard dependency)
-- lazylib (lunalib already needs it)
+- [lunalib](https://github.com/Lukas22041/LunaLib) 
+- [lazylib](https://github.com/LazyWizard/lazylib)
 
 ## install
 
@@ -18,11 +18,11 @@ open lunalib settings (main menu mod settings).
 tabs:
 
 - **general** — monthly HA cap, fleet caps, blowback
-- **pathers** — the knobs you already found
+- **pathers** — cells, interest, tithe, base-kill reductions
 - **pirates** — kanta, hidden bases, raid grace period
 - **hegemony** — ai-core points and inspections
-- **other** — league / tri-tach / diktat / church / remnant nexus
-- **raids** — raid cooldown / bombard leftovers
+- **other** — league, tri-tach, diktat, church, remnant nexus
+- **raids** — raid cooldown, bombard leftovers
 
 defaults match vanilla 0.98a.
 

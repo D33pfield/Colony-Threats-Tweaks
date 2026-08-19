@@ -1,4 +1,9 @@
- Version 1.0.2(8/19/26)
+Version 1.0.3(8/19/26)
+===============================
+Description changes
+Icon updates
+
+Version 1.0.2(8/19/26)
 ===============================
 Fixed version checkers direct download link
 
