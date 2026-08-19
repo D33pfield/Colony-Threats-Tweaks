@@ -3,7 +3,7 @@
 lunalib wrapper around vanilla hostile-activity / colony-threat settings.
 
 <img src="https://i.imgur.com/VxBBitC.png" alt="">
-<img src="https://i.imgur.com/aCyjfkN.png" alt="">
+<img src="https://i.imgur.com/ZXPGwnh.png" alt="">
 
 ## requires
 
