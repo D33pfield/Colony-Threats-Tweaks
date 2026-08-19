@@ -1,6 +1,6 @@
 # colony threats tweaks
 
-lunalib wrapper around vanilla hostile-activity / colony-threat settings. no more editing `starsector-core/data/config/settings.json`.
+lunalib wrapper around vanilla hostile-activity / colony-threat settings.
 
 ## requires
 
@@ -9,11 +9,11 @@ lunalib wrapper around vanilla hostile-activity / colony-threat settings. no mor
 
 ## install
 
-drop the `ColonyThreatsTweaks` folder into `Starsector/mods`. enable it in the launcher.
+drop the `Colony-Threats-Tweaks` folder into `Starsector/mods`. enable it in the launcher.
 
 ## use
 
-open lunalib settings (campaign hotkey, usually f2/f3, or from new-game / main menu mod settings).
+open lunalib settings (main menu mod settings).
 
 tabs:
 
@@ -25,18 +25,6 @@ tabs:
 - **raids** — raid cooldown / bombard leftovers
 
 defaults match vanilla 0.98a.
-
-## what actually changes
-
-the plugin writes into `SettingsAPI` (`setFloat` + `getSettingsJSON` + `resetCached`) on:
-
-- application load
-- game load
-- luna "save settings"
-
-monthly HA *gain* and a lot of spawn/interest checks read these keys live. already-accumulated HA on a save is not reset. if a value looks sticky, save + reload.
-
-arrays are not exposed (e.g. `pirateBaseProximityPoints`, `HA_pirateBase`, timeout ranges). those need a merge-json or a more cursed json rewrite.
 
 ## pather cheat-sheet
 
@@ -53,6 +41,8 @@ to stall the whole crisis meter: `ha_maxMonthlyProgress` = 0 (and the easy varia
 raising `minInterestForPatherCells` makes cells rarer.
 
 ## notes
+
+if a value looks sticky, save + reload.
 
 this is a utility mod (`utility: true`). removing it from a save is supposed to be safe; values revert to whatever other mods / vanilla merged.
 
