@@ -1,9 +1,13 @@
- Version 1.0.1(8/19/26)
+ Version 1.0.2(8/19/26)
+===============================
+Fixed version checkers direct download link
+
+Version 1.0.1(8/19/26)
 ===============================
 Added version checker support
 Added a changelog
 Added LazyLib dependency to modinfo
 
- Version 1.0 (8/19/26)
+Version 1.0 (8/19/26)
 ===============================
 Initial release

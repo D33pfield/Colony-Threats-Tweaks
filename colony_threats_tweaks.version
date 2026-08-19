@@ -37,7 +37,7 @@
     {
         "major":1,
         "minor":0,
-        "patch":1 # Can be a number, character or string (1, 2, a, b, "-RC2", etc)
+        "patch":2 # Can be a number, character or string (1, 2, a, b, "-RC2", etc)
     },
     
     ###################################################################################
@@ -46,7 +46,7 @@
     
     # Links to a direct download of the mod; fetched from the online version file
     # Used to download updates through LunaLib's main menu version checker UI
-    "directDownloadURL":"https://github.com/D33pfield/Colony-Threats-Tweaks/releases/latest/download/colony_threats_tweaks.zip",
+    "directDownloadURL":"https://github.com/D33pfield/Colony-Threats-Tweaks/releases/latest/download/Colony-Threats-Tweaks.zip",
     
     # Point at a directly accessible text file; fetched from the online version file
     # The contents of said file will be shown for that mod in LunaLib's main menu version checker UI
